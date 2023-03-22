@@ -1,0 +1,11 @@
+@startuml 演習2-4
+left to right direction
+actor 利用者 #DDDDDD;line:black;line.bold;
+rectangle ホテル宿泊予約 {
+    usecase キャンペーン
+    usecase (<u>予約</u>\n拡張点\nキャンペーン期間) as input
+    usecase ログイン
+}
+キャンペーン ...> input : << extend >>
+input ...> ログイン : << include >>
+利用者 ---> input
