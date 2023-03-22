@@ -6,6 +6,6 @@ usecase ログイン
 }
 利用者 --> 予約 
 left to right direction
-予約 .> ログイン : <<include>>
+予約 ..> ログイン : <<include>>
 
 @enduml
