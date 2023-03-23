@@ -1,0 +1,13 @@
+@startuml 演習2-6
+left to right direction
+    actor 社員 #DDDDDD;line:black;line.bold;
+    actor 人事担当者 #DDDDDD;line:black;line.bold;
+rectangle 従業員登録システム {
+    usecase 社員情報を参照する
+    usecase 社員情報を登録する
+    usecase 社員情報を変更する
+}
+人事担当者 --> 社員情報を登録する
+人事担当者 --> 社員情報を変更する
+社員 --> 社員情報を参照する
+@enduml
