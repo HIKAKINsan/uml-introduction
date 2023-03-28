@@ -1,5 +1,6 @@
 @startuml ユースケース図
 ' left to right direction
+skinparam actorStyle awesome
 actor 利用者 #Green;line:red;line.bold;text:red
 package 携帯システム {
 usecase 連絡先を登録する
