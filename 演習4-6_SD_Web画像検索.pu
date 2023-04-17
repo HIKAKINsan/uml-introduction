@@ -15,7 +15,6 @@ img -> img :画像ファイルを探す
 img --> webs :画像ファイル
 deactivate img
 webs --> brs :HTMLと画像ファイル
-deactivate web
 brs --> user :画像の閲覧
 deactivate brs
 deactivate user
