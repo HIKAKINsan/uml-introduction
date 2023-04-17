@@ -1,0 +1,20 @@
+@startuml
+hide footbox
+Actor ":客" as member
+
+participant ":フロア店員" as login
+participant ":料理人" as control
+' 厳密なUMLに準拠する
+skinparam style strictuml
+mainframe sd ラーメン屋さん
+activate member
+member -> login : ラーメンを注文する
+activate login
+login -> control : 調理を指示する
+activate control
+control -> control : 調理をする
+login <<-- control : ラーメン
+member <<-- login : ラーメン
+deactivate control
+deactivate login
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+hide footbox
+participant ":コントローラ" as con <<control>>
+participant ":ホテル" as hotel <<hotel>>
+participant ":予約" as yoyaku
+activate con
+con -> hotel :予約する()
+activate hotel
+hotel -> yoyaku :<<create>>
+hotel -> hotel :予約登録()
+activate hotel
+@enduml
