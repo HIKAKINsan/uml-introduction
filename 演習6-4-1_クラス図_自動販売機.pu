@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+class "自動販売機" as a{
+
+}
+
+class "ボタン" as b{
+
+}
+
+class "料金装置" as c{
+}
+
+class "ベンダー装置" as d{
+
+}
+
+a "1"*--"10" b
+a "1"*--"1" c
+a "1"*--"1" d
+@enduml

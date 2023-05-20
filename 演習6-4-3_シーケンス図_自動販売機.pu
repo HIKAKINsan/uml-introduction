@@ -1,0 +1,24 @@
+@startuml
+hide footbox
+Actor 客 as a
+participant ":料金装置" as b
+participant ":ボタン" as c
+participant ":ベンダー装置" as d
+
+activate a
+a -> b :料金を入れる
+activate b
+deactivate b
+a -> c :ボタンを押す
+activate c
+opt お金入れてる状態
+c -> d : ドリンクの指示
+deactivate c
+activate d
+d -> d :ドリンクの発注
+activate d
+d --> a : ドリンク
+deactivate d
+deactivate a
+end alt
+@enduml

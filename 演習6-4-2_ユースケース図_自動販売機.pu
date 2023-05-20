@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor 客 as a
+actor ベンダー as b
+
+rectangle 自動販売機 {
+    usecase 料金を回収する as c
+    usecase お金を入れる as d
+    usecase ボタンを押すこと as e
+}
+
+a --> d
+a --> e
+b --> c 
+@enduml
