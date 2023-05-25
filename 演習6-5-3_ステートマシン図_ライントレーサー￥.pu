@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+    state 電源SWON{
+        state exit <<exitPoint>>
+        state entry <<entryPoint>>
+        entry --> 右旋回: 暗いと判断
+        entry --> 左旋回: 明るいと判断
+        右旋回 --> 左旋回: 明るいと判断
+        左旋回 --> 右旋回: 暗いと判断
+        exit <- 右旋回
+        exit <- 左旋回
+    }
+    [*] -right-> 電源SWOFF
+    電源SWOFF -> entry: 電源SWを入れる
+    exit --> 電源SWOFF: 電源SWを切る
+    電源SWOFF -right-> [*]
+@enduml
