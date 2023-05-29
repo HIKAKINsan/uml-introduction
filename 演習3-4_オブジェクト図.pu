@@ -1,17 +1,17 @@
 @startuml 演習３－４
-object "車:車" as car{
+object "車:車クラス" as car{
     
 }
-object "車:タイヤ" as tire1{
+object "車:タイヤクラス" as tire1{
     
 }
-object "車:タイヤ" as tire2{
+object "車:タイヤクラス" as tire2{
     
 }
-object "車:タイヤ" as tire3{
+object "車:タイヤクラス" as tire3{
     
 }
-object "車:タイヤ" as tire4{
+object "車:タイヤクラス" as tire4{
     
 }
 car-up-tire1
