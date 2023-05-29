@@ -1,0 +1,18 @@
+@startuml
+start
+:材料を入手する;
+fork
+fork
+:野菜を見る;
+:肉、野菜を炒める;
+fork again
+:ルーを溶かす;
+end fork
+:ルーに野菜をいれて煮込む;
+fork again
+:米を洗う;
+:ご飯を炊く;
+end fork
+:ルーをご飯にかける;
+stop
+@enduml
