@@ -1,0 +1,13 @@
+@startuml
+start
+:ユーザ名を入力;
+:パスワードを入力;
+:認証;
+if () then (成功)
+:予約;
+else (失敗)
+:ユーザ名を入力;
+:パスワードを入力;
+endif
+stop
+@enduml

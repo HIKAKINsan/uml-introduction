@@ -1,0 +1,26 @@
+@startuml
+  |客|
+  |客|
+  |店員|
+  |店員|
+  |客|
+  start
+    :お弁当をレジに持っていく;
+    |店員|
+    fork
+      |客|
+      :お金を支払う;
+      |店員|
+      :清算する;
+    fork again
+      |店員|
+      if (温めますか) is (Yes) then
+        :お弁当を温める;
+      else (No)
+      endif
+      :お弁当を袋に入れる;
+    end fork
+    |客|
+    :お弁当を手にもつ;
+  stop
+@enduml
